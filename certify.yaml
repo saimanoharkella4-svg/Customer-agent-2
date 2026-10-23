@@ -47,12 +47,12 @@ sources:
       requires_human_approval: true
       risk_level: medium
       is_multi_agent: false
-    runbooks_dir: C:/Personal/Customer_Agent 2/runbooks
+    runbooks_dir: runbooks
     golden_dataset:
-      path: C:/Personal/Customer_Agent 2/eval/golden.jsonl
+      path: eval/golden.jsonl
 
   - type: openapi
-    path: C:/Personal/Customer_Agent 2/openapi.json
+    path: http://127.0.0.1:8005/openapi.json
 
   - type: repo
-    path: C:/Personal/Customer_Agent 2
+    path: https://github.com/saimanoharkella4-svg/Customer-agent-2
