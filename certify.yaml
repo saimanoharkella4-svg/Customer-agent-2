@@ -8,13 +8,13 @@ compliance_frameworks:
 sources:
   - type: yaml_inline
     runtime:
-      endpoint: https://support-agent-sandbox.example.com/chat
+      endpoint: http://127.0.0.1:8005/chat
       protocol: http
       target_env: sandbox
       timeout_s: 30
       auth:
         type: bearer
-        token_env: SUPPORT_AGENT_TOKEN
+        token_env: AGENT_API_TOKEN
     capabilities:
       max_steps: 6
       context_budget_tokens: 8000

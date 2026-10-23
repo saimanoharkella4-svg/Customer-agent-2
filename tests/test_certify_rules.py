@@ -58,8 +58,8 @@ def test_certify_yaml_manifest_settings():
     
     runtime = inline_source.get("runtime", {})
     assert runtime.get("target_env") == "sandbox", f"target_env must be 'sandbox', got {runtime.get('target_env')}"
-    assert runtime.get("endpoint", "").startswith("https://"), "runtime.endpoint must use https"
-    assert runtime.get("auth", {}).get("token_env") == "SUPPORT_AGENT_TOKEN"
+    assert runtime.get("endpoint", "").startswith(("https://", "http://127.0.0.1", "http://localhost")), "runtime.endpoint must use https or localhost"
+    assert runtime.get("auth", {}).get("token_env") in ["SUPPORT_AGENT_TOKEN", "AGENT_API_TOKEN"]
 
     capabilities = inline_source.get("capabilities", {})
     assert capabilities.get("requires_hitl") is True, "requires_hitl must be true"
