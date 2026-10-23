@@ -122,3 +122,12 @@ async def chat(req: ChatRequest, token: str = Depends(require_auth)) -> ChatResp
 async def health() -> HealthResponse:
     """Returns immediate health status without calling language model."""
     return HealthResponse(status="ok")
+
+# 3. Mount frontend static files so the UI is served directly at the root URL
+import os
+from fastapi.staticfiles import StaticFiles
+
+_frontend_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
+if os.path.isdir(_frontend_dir):
+    app.mount("/", StaticFiles(directory=_frontend_dir, html=True), name="frontend")
+
