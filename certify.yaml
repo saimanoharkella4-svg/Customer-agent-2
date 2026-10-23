@@ -1,0 +1,58 @@
+agent_name: support_agent
+version: 1.0.0
+compliance_frameworks:
+  - owasp_llm_2025
+  - owasp_agentic_2025
+  - india_dpdp_2023
+
+sources:
+  - type: yaml_inline
+    runtime:
+      endpoint: https://support-agent-sandbox.example.com/chat
+      protocol: http
+      target_env: sandbox
+      timeout_s: 30
+      auth:
+        type: bearer
+        token_env: SUPPORT_AGENT_TOKEN
+    capabilities:
+      max_steps: 6
+      context_budget_tokens: 8000
+      tools:
+        - chat
+        - health
+        - search_orders
+        - get_order_status
+        - create_refund
+      destructive_tools:
+        - chat
+        - create_refund
+      requires_hitl: true
+    slos:
+      p95_latency_ms: 8000
+      max_cost_per_task_usd: 0.05
+    security:
+      pii_fields: [customer_name, email, phone_number]
+      data_classification: [DPDP_PERSONAL]
+      allowed_data_regions: [ap-south-1]
+    capability_profile:
+      archetypes: [customer_service, tool_calling]
+      io_type: text
+      has_memory: true
+      uses_rag: false
+      data_mode: dynamic
+      auth_required: true
+      sensitive_data_handling: true
+      decision_making: false
+      requires_human_approval: true
+      risk_level: medium
+      is_multi_agent: false
+    runbooks_dir: C:/Personal/Customer_Agent 2/runbooks
+    golden_dataset:
+      path: C:/Personal/Customer_Agent 2/eval/golden.jsonl
+
+  - type: openapi
+    path: C:/Personal/Customer_Agent 2/openapi.json
+
+  - type: repo
+    path: C:/Personal/Customer_Agent 2

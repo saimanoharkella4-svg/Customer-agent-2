@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Agent 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Login Modal -->
+    <div id="login-overlay" class="login-overlay" style="display: none;">
+        <div class="login-card">
+            <div class="bot-avatar login-avatar">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#A855F7" />
+                    <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#A855F7" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h2>Secure Customer Login</h2>
+            <p>Please enter your details to access your account.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="customer-name">Customer Name</label>
+                    <input type="text" id="customer-name" placeholder="e.g. Customer 2" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" placeholder="e.g. 919000000001" required>
+                </div>
+                <button type="submit" class="login-btn">Login & Continue</button>
+                <button type="button" id="close-login-btn" class="login-btn"
+                    style="background: transparent; border: 1px solid rgba(255,255,255,0.2); margin-top: 10px;">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="chat-container" id="chat-container">
+        <header class="chat-header">
+            <div class="header-content"
+                style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                <div style="display: flex; align-items: center;">
+                    <div class="bot-avatar" style="margin-right: 15px;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#A855F7" />
+                            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#A855F7" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h1>Customer Agent 2</h1>
+                        <p class="status" id="user-status">Browsing as Guest</p>
+                    </div>
+                </div>
+                <button id="open-login-btn"
+                    style="background: #A855F7; color: white; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-weight: 500;">Login</button>
+            </div>
+        </header>
+
+        <main class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I am your customer support assistant. How can I help you today? ✨
+                </div>
+            </div>
+        </main>
+
+        <div class="typing-indicator hidden" id="typing-indicator">
+            <span></span><span></span><span></span>
+        </div>
+
+        <footer class="chat-input-area">
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" required>
+                <button type="submit" id="send-btn" title="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

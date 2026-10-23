@@ -1,0 +1,24 @@
+{"input": "How many days do I have to return an item?", "expected": "30 days", "match": "contains", "group": "new_customer", "name": "return window"}
+{"input": "How many days do I have to return an item?", "expected": "30 days", "match": "contains", "group": "returning_customer", "name": "return window"}
+{"input": "How long do refunds take to process?", "expected": "5 business days", "match": "contains", "group": "new_customer", "name": "refund window"}
+{"input": "How long do refunds take to process?", "expected": "5 business days", "match": "contains", "group": "returning_customer", "name": "refund window"}
+{"input": "How long does standard shipping take?", "expected": "3-7 business days", "match": "contains", "group": "new_customer", "name": "shipping time"}
+{"input": "How long does standard shipping take?", "expected": "3-7 business days", "match": "contains", "group": "returning_customer", "name": "shipping time"}
+{"input": "What is the customer support email?", "expected": "support@techmart.com", "match": "contains", "group": "new_customer", "name": "support email"}
+{"input": "What is the customer support email?", "expected": "support@techmart.com", "match": "contains", "group": "returning_customer", "name": "support email"}
+{"input": "What are your business hours?", "expected": "9 AM - 6 PM IST", "match": "contains", "group": "new_customer", "name": "business hours"}
+{"input": "What are your business hours?", "expected": "9 AM - 6 PM IST", "match": "contains", "group": "returning_customer", "name": "business hours"}
+{"input": "Can you summarize your primary function and what tasks you are designed to assist with?", "expected": "TechMart Support Agent", "match": "contains", "group": "new_customer", "name": "agent identity"}
+{"input": "Can you summarize your primary function and what tasks you are designed to assist with?", "expected": "TechMart Support Agent", "match": "contains", "group": "returning_customer", "name": "agent identity"}
+{"input": "Where is my order ORD00255?", "expected": "Pending", "match": "contains", "group": "new_customer", "name": "order status pending"}
+{"input": "Where is my order ORD00255?", "expected": "Pending", "match": "contains", "group": "returning_customer", "name": "order status pending"}
+{"input": "What is the tracking number for order ORD00255?", "expected": "TRK553330740", "match": "contains", "group": "new_customer", "name": "tracking id"}
+{"input": "What is the tracking number for order ORD00255?", "expected": "TRK553330740", "match": "contains", "group": "returning_customer", "name": "tracking id"}
+{"input": "What is the status of order ORD00490?", "expected": "Delivered", "match": "contains", "group": "new_customer", "name": "order status delivered"}
+{"input": "What is the status of order ORD00490?", "expected": "Delivered", "match": "contains", "group": "returning_customer", "name": "order status delivered"}
+{"input": "Can you check order ORD00441 for me?", "expected": "Cancelled", "match": "contains", "group": "new_customer", "name": "order status cancelled"}
+{"input": "Can you check order ORD00441 for me?", "expected": "Cancelled", "match": "contains", "group": "returning_customer", "name": "order status cancelled"}
+{"input": "I would like to request a refund for order ORD00255", "expected": "supervisor approval", "match": "contains", "group": "new_customer", "name": "refund approval requirement"}
+{"input": "I would like to request a refund for order ORD00255", "expected": "supervisor approval", "match": "contains", "group": "returning_customer", "name": "refund approval requirement"}
+{"input": "Where is order ORD99999?", "expected": "not found", "match": "contains", "group": "new_customer", "name": "order not found"}
+{"input": "Where is order ORD99999?", "expected": "not found", "match": "contains", "group": "returning_customer", "name": "order not found"}

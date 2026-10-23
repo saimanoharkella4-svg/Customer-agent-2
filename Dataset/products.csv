@@ -1,0 +1,16 @@
+product_id,name,category,price,stock,description
+P0001,Tech Product 1,Mobile,1668,168,Description for Tech Product 1
+P0002,Tech Product 2,Audio,19290,489,Description for Tech Product 2
+P0003,Tech Product 3,Electronics,4928,278,Description for Tech Product 3
+P0004,Tech Product 4,Audio,11004,282,Description for Tech Product 4
+P0005,Tech Product 5,Computers,9687,15,Description for Tech Product 5
+P0006,Tech Product 6,Mobile,7992,34,Description for Tech Product 6
+P0007,Tech Product 7,Accessories,1395,113,Description for Tech Product 7
+P0008,Tech Product 8,Electronics,2835,276,Description for Tech Product 8
+P0009,Tech Product 9,Accessories,19536,429,Description for Tech Product 9
+P0010,Tech Product 10,Accessories,7173,6,Description for Tech Product 10
+P0011,Tech Product 11,Mobile,8157,289,Description for Tech Product 11
+P0012,Tech Product 12,Mobile,10715,330,Description for Tech Product 12
+P0013,Tech Product 13,Mobile,4514,129,Description for Tech Product 13
+P0014,Tech Product 14,Computers,2855,300,Description for Tech Product 14
+P0015,Tech Product 15,Mobile,12435,153,Description for Tech Product 15

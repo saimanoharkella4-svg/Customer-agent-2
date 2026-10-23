@@ -1,0 +1,11 @@
+customer_id,name,email,phone
+C0001,Customer 1,customer1@example.com,919000000001
+C0002,Customer 2,customer2@example.com,919000000002
+C0003,Customer 3,customer3@example.com,919000000003
+C0004,Customer 4,customer4@example.com,919000000004
+C0005,Customer 5,customer5@example.com,919000000005
+C0006,Customer 6,customer6@example.com,919000000006
+C0007,Customer 7,customer7@example.com,919000000007
+C0008,Customer 8,customer8@example.com,919000000008
+C0009,Customer 9,customer9@example.com,919000000009
+C0010,Customer 10,customer10@example.com,919000000010

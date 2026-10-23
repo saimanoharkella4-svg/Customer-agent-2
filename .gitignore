@@ -1,0 +1,11 @@
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.log
+.pytest_cache/
+audit_res*.txt
+report*.json
+output.txt
